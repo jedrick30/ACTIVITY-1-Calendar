@@ -1,0 +1,90 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 20px;
+  color: #333;
+  background: #f2f6fc;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 1em;
+  color: #2b3a67;
+}
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 15px;
+}
+.month {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  background: white;
+}
+.month h2 {
+  margin: 0;
+  padding: 10px;
+  font-size: 1.2em;
+  text-align: center;
+  background: linear-gradient(135deg, #4e73df, #1cc88a);
+  color: white;
+}
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  font-size: 0.9em;
+}
+.days div {
+  padding: 6px 4px;
+  border: 1px solid #eee;
+}
+.days div:nth-child(-n+7) {
+  background: #f8f9fc;
+  font-weight: bold;
+}
+.sun {
+  color: #e74a3b;
+  background: #fdecea;
+  font-weight: bold;
+}
+.sat {
+  color: #2980b9;
+  background: #eaf3fd;
+  font-weight: bold;
+}
+.holiday {
+  background: #ffd54f;
+  font-weight: bold;
+  color: #4e342e;
+  border-radius: 4px;
+}
+.holidays-list {
+  margin-top: 30px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.holidays-list h2 {
+  margin-bottom: 15px;
+  color: #2b3a67;
+  text-align: center;
+}
+.holidays-list ul {
+  list-style: none;
+  padding: 0;
+  column-count: 2;
+  column-gap: 25px;
+}
+.holidays-list li {
+  margin-bottom: 8px;
+}
+.holidays-list a {
+  text-decoration: none;
+  color: #2b3a67;
+  font-weight: bold;
+}
+.holidays-list a:hover {
+  color: #1cc88a;
+  text-decoration: underline;
+}
